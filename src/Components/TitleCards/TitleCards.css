@@ -1,0 +1,43 @@
+.titlecard{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+.titlecard h2{
+    margin-bottom: 8px;
+    
+}
+
+.card-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Use 'auto' to show scrollbar only when needed */
+    width: calc(100% - 2065px); /* Adjust the width to accommodate the gap */
+    flex-wrap: nowrap; /* Prevent flex items from wrapping */
+    padding-bottom: 10px; /* Remove the padding to prevent extra space for scrollbar */
+  }
+  
+  .card-list::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+
+  .card-list{
+    scrollbar-width: none;
+  }
+.card-list img{
+    width: 240px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.card-list .card{
+    position: relative;
+    
+    
+}
+.card-list .card p{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-decoration:none;
+    color: whitesmoke;
+}
